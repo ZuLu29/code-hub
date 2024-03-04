@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INFOGRAPHICS2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="INFOGRAPH2.0.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input id="menu" type="checkbox" />
+        <div class="logo">
+          <div class="code">Code</div>
+          <div class="hub">hub</div>
+        </div>
+        <ul class="links">
+          <li><a href="INFOGRAPH2.0.html">Home</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+        <label for="menu" class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+      </nav>
+    </header>
+    <section class="home-section" id="home">
+      <div class="container1">
+        <div class="banner">
+          <h1>HOW TO SURVIVE THE <span>BSIT</span> COURSE</h1>
+          <p>
+            A Bachelor of Science in Information Technology (BSIT) is a program
+            that focuses on the study of technology, software, and computer
+            systems used in businesses and organizations. It aims to prepare
+            students to design, develop, and implement IT solutions to meet
+            business needs. Surviving a Bachelor of Science in Information
+            Technology (IT) requires a combination of academic preparation, time
+            management, and personal discipline.
+          </p>
+        </div>
+        <img src="img/logo3.png" alt="logo3" />
+      </div>
+    </section>
+    <script>
+      const darkModeToggle = document.querySelector("#dark-mode-toggle");
+      const body = document.querySelector("body");
+
+      darkModeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        darkModeToggle.textContent = body.classList.contains("dark-mode")
+          ? "Light Mode"
+          : "Dark Mode";
+      });
+    </script>
+  </body>
+</html>
